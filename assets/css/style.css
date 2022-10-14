@@ -104,17 +104,20 @@ body{
     border-radius: 20px;
     padding: .5rem;
 }
-.ul-redes{
+.home-redes{
     display: flex;
     justify-content: space-evenly;
 
 }
 
-.ul-redes .redes{
+.home-redes .redes a{
+    color: var(--color-blanco);
+    width: 100px;
+    height: 20px;
     padding: 1.5rem;
-
 }
 
+/*  ABOUT ME*/
 .main .aboutme_section{
     margin: 0 auto;
     padding: 30px 20px 5px 20px;
@@ -140,7 +143,6 @@ body{
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 20px;
-    padding: 2rem;
 }
 
 /* ---------- SKILLS ---------*/
@@ -362,17 +364,19 @@ footer>p {
             display: block;
             width: 100%;
         }
+        .portafolio_section h3{
+            text-align: left;
+            padding-left: 2rem;
+        }
         .portfolio .galeria .proyecto{
             max-width: 100%;
         }
         .portfolio .galeria .proyecto img{
             width: 100%;
         }
-        .contacto .fila{
-            display: block;
-        }
-        .contacto .fila .col{
-            width: 100%;
+        .contact_section h3{
+            text-align: left;
+            padding-left: 2rem;
         }
     }
 }

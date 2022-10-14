@@ -20,7 +20,7 @@
                     <li><a href="#inicio" onclick="seleccionar()">Home</a></li>
                     <li><a href="#sobremi" onclick="seleccionar()">About me</a></li>
                     <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">Experience</a></li>
+                    <!-- <li><a href="#experience" onclick="seleccionar()">Experience</a></li> -->
                     <li><a href="#portfolio" onclick="seleccionar()">Portfolio</a></li>
                     <li><a href="#contacto" onclick="seleccionar()">Contact</a></li>
                 </ul>
@@ -33,7 +33,7 @@
     <br>
     <main class="main">
 <!-- HOME SECCION -->
-            <section class="home_section">
+            <section class="home_section" id="inicio">
                 <div class="home-contenido">
                     <div class="home-img">
                         <img src="assets/img/descarga.png" alt="">
@@ -46,44 +46,43 @@
                         <h1>desarrollador web</h1>
                     </div>
                     <br>
-                    <div class="home-ul-redes">
-                        <ul class="ul-redes">
-                            <li class="redes">
-                               <a href="">
-                                   <img src="/assets/img/svg/linkedin.svg" alt="">
-                                </a> 
-                            </li>
-                            <li class="redes">
-                                <a href="">
-                                    <img src="/assets/img/svg/instagram.svg" alt="">
+                    <div class="home-redes">
+                        <div class="redes">
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin fa-3x"></i>
                                 </a>
-                            </li>
-                            <li class="redes">
-                                <a href="">
-                                    <img src="/assets/img/svg/twitter.svg" alt="">
-                                </a>
-                            </li>
-                        </ul>
+                        </div>
+                        <div class="redes">
+                            <a href="https://www.instagram.com/jeffchc94/" target="_blank">
+                                <i class="fa-brands fa-instagram fa-3x"></i>
+                            </a>
+                        </div>
+                        <div class="redes">
+                            <a href="https://twitter.com/JeffChuquimarca" target="_blank">
+                                <i class="fa-brands fa-twitter fa-3x"></i></i>
+                            </a>  
+                        </div>
                     </div>    
                 </div>
             </section>
 
 <!-- ABOUT ME SECCION -->
-            <section class="aboutme_section">
+            <section class="aboutme_section" id="sobremi">
                 <div class="aboutme-contenido">
-                    <h3 class="aboutme_h2">Acerca de mi</h3>
+                    <h3 class="aboutme_h2">About me</h3>
                     <br>
                     <p> 
-                    Hi, I'm Jefferson Chuquimarca. I live in the beautiful country of Ecuador.
+                    Hi, I'm Jefferson Chuquimarca. I live in the beautiful country of Ecuador. </p>
+                    <p>
                     I started in the world of web development in the year 2022 studying at Academlo bootcamp. I have managed to achieve many skills in the web development environment, in frontend and backend.
                     </p>
                 </div>
             </section>
             <br>
 
-            <section class="skills_section">
+            <section class="skills_section" id="skills">
                 <div class="skills-contenido">
-                    <h3> Mis habilidades</h3>
+                    <h3> Skills</h3>
                     
                     <div class="cont-skills">
 
@@ -128,19 +127,18 @@
                 </div>
             </section>
             <br>
-            <section class="experiencia_section">
+            <!-- <section class="experiencia_section">
                 <div class="experiencia-contenido">
-                    <h3>Experiencia</h3>
-
-                    <div class=""></div>
-                    <div></div>
-                    <div></div>
+                    <h3>Experience</h3>
+                    <div>
+                        
+                    </div>
                 </div>
             
             </section>
-            <br>
-            <section class="portafolio_section">
-                <h3>Portafolio</h3>
+            <br> -->
+            <section class="portafolio_section" id="portfolio">
+                <h3>Portfolio</h3>
                     <div class="galeria">
                     <div class="proyecto">
                         <img src="/assets/img/ejemplo 1.png" alt="">
@@ -159,13 +157,14 @@
                     </div>
             </section>
             <!-- CONTACTO  SECTION-->
-            <section class="contact_section">
-                <h3>Contacto:</h3>
+            <br>
+            <section class="contact_section" id="contacto">
+                <h3>Contacts:</h3>
                 <div class="contact-contenido">
                     <div class="contacts_container">
                         <a href="mailto:jrenan.ch@gmail.com" target="_blank" >
                             <i class="fa-sharp fa-solid fa-envelope fa-2x"></i></a>
-                            <span> Email </span>
+                            <span>Email</span>
                     </div>
                     <div class="contacts_container">
                         <a href="https://api.whatsapp.com/send?phone=593998554562" target="_blank">
