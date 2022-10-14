@@ -10,22 +10,24 @@
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    <div class="div-header">
+    <div class="contenedor-header">
         <header>
-
-            <nav class="flex-nav">
-                <div class="nav-div">
-                    <h2>  <span>  </span>  </h2>
-                </div>
-                <ul class="menu-init">                
-                    <li class="items-li"><a href="#">Home</a></li>
-                    <li class="items-li"><a href="#">Acerca de mi</a></li>
-                    <li class="items-li"><a href="#">Mis habilidades</a></li>
-                    <li class="items-li"><a href="#">Experiencia</a></li>
-                    <li class="items-li"><a href="#">Portafolio</a></li>
-                    <li class="items-li"><a href="#">Contacto</a></li>
+            <div class="logo">
+                <a href="#">Jeff-Dev</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Home</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">About me</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Experience</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Portfolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contact</a></li>
                 </ul>
             </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </div>
         </header>
     </div>
     <br>
@@ -34,7 +36,7 @@
             <section class="home_section">
                 <div class="home-contenido">
                     <div class="home-img">
-                        <img src="/assets/img/Rectangle 1.png" alt="">
+                        <img src="assets/img/descarga.png" alt="">
                     </div>
                     <br>
                     <div class="info-content">
@@ -78,6 +80,7 @@
                 </div>
             </section>
             <br>
+
             <section class="skills_section">
                 <div class="skills-contenido">
                     <h3> Mis habilidades</h3>
@@ -138,21 +141,22 @@
             <br>
             <section class="portafolio_section">
                 <h3>Portafolio</h3>
-                <div class="div-portafolio">
-                    <ul class="ul-portafolio">
-                        <li class="li-portafolio zoom">
-                            <img src="/assets/img/ejemplo 1.png" alt="">
-                        </li>
-                        
-                        <li class="li-portafolio zoom">
-                            <img src="/assets/img/ejemplo 2.png" alt="">
-                        </li>
-                        
-                        <li class="li-portafolio zoom">
-                            <img src="/assets/img/ejemplo 3.png" alt="">
-                        </li>
-                    </ul>
-                </div>
+                    <div class="galeria">
+                    <div class="proyecto">
+                        <img src="/assets/img/ejemplo 1.png" alt="">
+                        <div class="overlay">
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="/assets/img/ejemplo 2.png" alt="">
+                        <div class="overlay">
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="/assets/img/ejemplo 3.png" alt="">
+                        <div class="overlay">
+                        </div>
+                    </div>
             </section>
             <!-- CONTACTO  SECTION-->
             <section class="contact_section">
@@ -171,9 +175,11 @@
                 </div>
             </section>
         </main>
+        <br><br>
         <footer>
             <hr>
             <p>Hecho con <span> <i class="fa-solid fa-heart"></i></span> por Jefferson Chuquimarca</p>
         </footer>
+        <script src="/assets/javascript/script.js"></script>
 </body>
 </html>
