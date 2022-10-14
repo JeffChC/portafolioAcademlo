@@ -316,7 +316,7 @@ footer>p {
 
 /* Responsive*/
 
-@media screen and (max-width:930px){
+@media screen and (max-width:900px){
     nav{
         display: none;
     }
